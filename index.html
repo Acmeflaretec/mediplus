@@ -28,6 +28,63 @@ TemplateMo 591 villa agency
 https://templatemo.com/tm-591-villa-agency
 
 -->
+<style>
+  .map-container {
+      align-content: center;
+      position: relative;
+      overflow: hidden;
+      padding-top: 56.25%; /* 16:9 aspect ratio (divide 9 by 16 = 0.5625 or 56.25%) */
+  }
+  .map-container iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+  }
+
+  .quote-card {
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.quote-card h6 {
+    color: #888;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.quote-card h2 {
+    color: #333;
+    font-size: 24px;
+    font-weight: bold;
+    margin: 0;
+}
+ .footer {
+            background-color: #333;
+            color: #fff;
+            padding: 30px 0;
+            text-align: center;
+        }
+        .footer ul {
+            list-style: none;
+            padding: 0;
+        }
+        .footer ul li {
+            display: inline;
+            margin: 0 10px;
+        }
+        .footer ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+        .footer p {
+            margin: 10px 0 0;
+        }
+
+</style>
 
   </head>
 
@@ -81,7 +138,7 @@ https://templatemo.com/tm-591-villa-agency
                     <!-- ***** Menu Start ***** -->
                     <ul class="nav">
                       <li><a href="index.html" class="active">Home</a></li>
-                      <li><a href="#about-us" >About us</a></li>
+                      <li><a href="#abou" >About us</a></li>
                       <li><a href="property-details.html">services</a></li>
                       <li><a href="contact.html">Contact Us</a></li>
                       <li><a href="contact.html"><i class="fa fa-calendar"></i> Schedule a visit</a></li>
@@ -127,24 +184,28 @@ https://templatemo.com/tm-591-villa-agency
         </h2>
         </div>
       </div>
+      
     </div>
+  </div>
+  <div id="abou">
+
   </div>
 <div>
  
-  <div  class="featured section" id="about-us">
+  <div  class="featured section" >
     <div class="container">
         <div   class="row">
             <div class="col-md-6">
-                <h2>Welcome to Our Lab</h2>
-                <p>
+                <h2>Welcome to Our Lab.</h2>
+                <p style="padding-top: 5%;">
                     At Mediplus Diagnostics, we prioritize your health. Our state-of-the-art facility
                     offers a wide range of diagnostic services to ensure accurate and timely results.
                     Whether it's routine blood tests or specialized diagnostics, we are here to serve
                     you with excellence and care.
                 </p>
-                <a href="properties.html" class="btn btn-primary">Explore Our Services</a>
+                <a style="margin-top: 5%;" href="property-details.html" class="btn btn-primary">Explore Our Services</a>
             </div>
-            <div class="col-md-6">
+            <div style="padding-top: 5%;" class="col-md-6">
                 <img src="assets/images/Banner 2.png"  alt="Lab Image" class="img-fluid">
             </div>
         </div>
@@ -156,7 +217,7 @@ https://templatemo.com/tm-591-villa-agency
       <div class="row">
         <div class="col-lg-4 offset-lg-4">
           <div class="section-heading text-center">
-            <h6>| Video View</h6>
+            <h6></h6>
             <h2>Harnessing Our Medical Expertise To Build Best Test Offering!</h2>
           </div>
         </div>
@@ -183,7 +244,7 @@ https://templatemo.com/tm-591-villa-agency
         <div class="col-lg-4">
             <div class="counter">
                 <h2 class="timer count-title count-number" data-to="2012" data-speed="1000"></h2>
-                <p class="count-text">Established in <span id="establishedYear"></span></p>
+                <p class="count-text">Test count<span id="establishedYear"></span></p>
             </div>
         </div>
         <div class="col-lg-4">
@@ -317,10 +378,10 @@ https://templatemo.com/tm-591-villa-agency
     <div class="container">
       <div class="row">
         <div class="col-lg-4 offset-lg-4">
-          <div class="section-heading text-center">
-            <h6>| Promise</h6>
-            <h2>We Provide The Best Service For You</h2>
-          </div>
+          <div class="quote-card">
+            <h6>Our Promise</h6>
+            <h2>We Provide The Best Service For You.</h2>
+        </div>
         </div>
       </div>
       <!-- <div class="row">
@@ -441,21 +502,23 @@ https://templatemo.com/tm-591-villa-agency
       <div class="row">
         <div class="col-lg-4 offset-lg-4">
           <div class="section-heading text-center">
-            <h6>| Contact Us</h6>
-            <h2>Get In Touch With Our Staff</h2>
+          <H2 style="font-style: normal;">CONATCT US</h2>
+          
           </div>
         </div>
       </div>
     </div>
   </div>
 
-  <!-- <div class="contact-content">
+  <div class="contact-content">
     <div class="container">
       <div class="row">
-        <div class="col-lg-7">
+        <div class="col-lg-12">
           <div id="map">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3942.4024285972782!2d76.64402947360993!3d8.842072591889883!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b05e4b41be02f51%3A0xd051cc3c53fa962e!2sMediplus%20Diagnostics!5e0!3m2!1sen!2sin!4v1707810213601!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>          </div>
-            <div class="row">
+            <div class="map-container">
+              <iframe  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3942.4024285972782!2d76.64402947360993!3d8.842072591889883!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b05e4b41be02f51%3A0xd051cc3c53fa962e!2sMediplus%20Diagnostics!5e0!3m2!1sen!2sin!4v1707810213601!5m2!1sen!2sin" width="" height="450" style="border:0; align-items: center;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+            <div style="padding-top: 5%;" class="row">
               <div class="col-lg-6">
                   <div class="item phone">
                       <img src="assets/images/phone-icon.png" alt="" style="max-width: 52px;">
@@ -472,7 +535,7 @@ https://templatemo.com/tm-591-villa-agency
               </div>
           </div>
           
-        </div> -->
+        </div>
 
 
 
@@ -515,15 +578,80 @@ https://templatemo.com/tm-591-villa-agency
     </div>
   </div>
 
-  <footer>
-    <div class="container">
-      <div class="col-lg-8">
-        <p>Copyright © 2048 Villa Agency Co., Ltd. All rights reserved. 
-        
-        Design: <a rel="nofollow" href="https://templatemo.com" target="_blank">TemplateMo</a></p>
+  
+
+<footer class="new_footer_area bg_color">
+  <div class="new_footer_top">
+      <div class="container">
+          <div class="row">
+              <div style="padding-top: 5%;" class="col-lg-3 col-md-6">
+                  <div class="f_widget company_widget wow fadeInLeft" data-wow-delay="0.2s" style="visibility: visible; animation-delay: 0.2s; animation-name: fadeInLeft;">
+                      <h3 class="f-title f_600 t_color f_size_18">Get in Touch</h3>
+                      <p>Don’t miss any updates of our new services!</p>
+                      <form action="#" class="f_subscribe_two mailchimp" method="post" novalidate="true" _lpchecked="1">
+                          <input type="text" name="EMAIL" class="form-control memail" placeholder="Email">
+                          <!-- <button  class="btn btn_get btn_get_two">Subscribe</button> -->
+                          <p class="mchimp-errmessage" style="display: none;"></p>
+                          <p class="mchimp-sucmessage" style="display: none;"></p>
+                      </form>
+                  </div>
+              </div>
+              <div style="padding-top: 5%;" class="col-lg-3 col-md-6">
+                  <div class="f_widget about-widget pl_70 wow fadeInLeft" data-wow-delay="0.4s" style="visibility: visible; animation-delay: 0.4s; animation-name: fadeInLeft;">
+                      <h3 class="f-title f_600 t_color f_size_18">Services</h3>
+                      <ul class="list-unstyled f_list">
+                          <li><a href="#">SUGAR</a></li>
+                          <li><a href="#">BLOOD PRESSURE</a></li>
+                          <li><a href="#">TOTAL CHOLESTROL</a></li>
+                          <li><a href="#">LIPID PROFILE</a></li>
+                          <li><a href="#">KIDNEY TEST (RFT)</a></li>
+                          <li><a href="#">LIVER  FUNCTION TEST(Hepatitis B & C)</a></li>
+                      </ul>
+                  </div>
+              </div>
+              <div style="padding-top: 5%;" class="col-lg-3 col-md-6">
+                  <div class="f_widget about-widget pl_70 wow fadeInLeft" data-wow-delay="0.6s" style="visibility: visible; animation-delay: 0.6s; animation-name: fadeInLeft;">
+                      <h3 class="f-title f_600 t_color f_size_18">Help</h3>
+                      <ul class="list-unstyled f_list">
+                          <li><a href="#">HOME</a></li>
+                          <li><a href="#abou">ABOUT US</a></li>
+                          <li><a href="property-details.html">SERVICES</a></li>
+                          
+                      </ul>
+                  </div>
+              </div>
+              <div style="padding-top: 5%;"  class="col-lg-3 col-md-6">
+                  <div class="f_widget social-widget pl_70 wow fadeInLeft" data-wow-delay="0.8s" style="visibility: visible; animation-delay: 0.8s; animation-name: fadeInLeft;">
+                      <h3 class="f-title f_600 t_color f_size_18">Mediplus Mayyanad</h3>
+                      <div class="f_social_icon">
+                          <a href="#" class="fab fa-facebook"></a>
+                          <a href="#" class="fab fa-twitter"></a>
+                          <a href="#" class="fab fa-linkedin"></a>
+                          <a href="#" class="fab fa-pinterest"></a>
+                      </div>
+                  </div>
+              </div>
+          </div>
       </div>
-    </div>
-  </footer>
+      <div class="footer_bg">
+          <div class="footer_bg_one"></div>
+          <div class="footer_bg_two"></div>
+      </div>
+  </div>
+  <div class="footer_bottom">
+      <div class="container">
+          <div class="row align-items-center">
+              <div class="col-lg-6 col-sm-7">
+                  <p class="mb-0 f_400">© Mediplus Mayyanad 2024 All rights reserved.</p>
+              </div>
+              <div class="col-lg-6 col-sm-5 text-right">
+                  <p>Designed by  <i class="icon_heart"></i><a href="http://www.acmeflare.in" target="_blank">Acmeflare Technologies</a></p>
+              </div>
+          </div>
+      </div>
+  </div>
+</footer>
+
 
   <!-- Scripts -->
   <!-- Bootstrap core JavaScript -->
